@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYPP Payroll System</title>
+    <style>
+        /* Remove default margins and padding, set full height */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevents double scrollbars from appearing */
+        }
+
+        /* Force the iframe to fill the exact dimensions of the window */
+        .fullscreen-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbw85oVy2my0QJ5Ql-PGGoo9_G0DT-X8OW4GkRlY_QUN1Ebto_GxfJn0LNXj7KGfTYjP/exec"
-        width="100%"
-        height="100%"
-        style="border: none;"> </iframe>
+    <iframe 
+        class="fullscreen-iframe" 
+        src="https://script.google.com/macros/s/AKfycbwvNWI1zknX69_IEFP7RbcHogI9uRSzwOz0YW4TrZtzpyScBhAEKDNDAA28JR7_i4GE/exec"
+        title="GYPP Payroll System">
+    </iframe>
 </body>
 </html>
